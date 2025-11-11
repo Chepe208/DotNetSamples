@@ -11,7 +11,16 @@ namespace TiposDeDatosApp
             //Creamos una instancia del objeto Estudiante.
             Estudiante alumno = new Estudiante(98646, "Luis Fernando", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing);
             alumno.GetInfoEstudiante();
+            Estudiante aprendiz = new Estudiante(98647, "Luis Armando", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing);
             Console.WriteLine(Estudiante.GetInfoEstudiante(alumno));
+            Console.WriteLine(Estudiante.GetInfoEstudiante(aprendiz));
+            Estudiante[] misalumnos = [
+                new Estudiante(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
+                new Estudiante(98649, "Luis Alfonso", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing)
+            ];
+            Console.WriteLine(Estudiante.GetInfoEstudiante(misalumnos[0]));
+            Console.WriteLine(Estudiante.GetInfoEstudiante(misalumnos[1]));
+               
         }
     }
 }
