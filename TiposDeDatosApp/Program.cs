@@ -20,7 +20,7 @@ namespace TiposDeDatosApp
 
             foreach (Estudiante e in misalumnos)
             {
-                Console.WriteLine("--------------------------------");
+                Console.WriteLine("\n --------------------------------");
                 Console.WriteLine(Estudiante.GetInfoEstudiante(e));
             }
 
@@ -32,12 +32,9 @@ namespace TiposDeDatosApp
 
             foreach (Docente d in misDocentes)
             {
-                Console.WriteLine("--------------------------------");
+                Console.WriteLine("\n --------------------------------");
                 Console.WriteLine(Docente.GetInfoDocente(d));
             }
-            
-
-
         }
     }
 }
